@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:visibility="visible"
+    tools:context=".MainActivity">
+
+
+
+    <TextView
+        android:id="@+id/top_textview"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+
+        android:layout_marginTop="16dp"
+        android:text="Re-Book!"
+
+        android:textColor="@color/purple_500"
+        android:textSize="30sp"
+        android:textStyle="bold"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <ImageView
+        android:id="@+id/login_Image"
+        android:layout_width="335dp"
+        android:layout_height="224dp"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/loginmain"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.355"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/top_textview" />
+
+    <TextView
+        android:id="@+id/login_hello_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:text="Hello!"
+        android:textColor="@color/black"
+        android:textSize="36sp"
+
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/login_Image" />
+
+    <TextView
+        android:id="@+id/top_desctextview"
+        android:layout_width="296dp"
+        android:layout_height="71dp"
+        android:layout_marginTop="32dp"
+        android:text="Best place to sell and buy Book,Digest,Notes,etc."
+        android:textColor="@color/purple_200"
+        android:textSize="22sp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.643"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/login_hello_textview" />
+
+    <TextView
+
+        android:id="@+id/login_button"
+        android:layout_width="150dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/round_corner_button_solid"
+        android:gravity="center"
+        android:text="LOGIN"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/top_desctextview" />
+
+    <TextView
+        android:id="@+id/Signup_button"
+        android:layout_width="150dp"
+        android:layout_height="80dp"
+        android:layout_margin="64dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/round_corner_outline_button"
+        android:gravity="center"
+        android:text="Signup"
+        android:textColor="@color/purple_700"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/login_button" />
+
+
+</android.support.constraint.ConstraintLayout>
