@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginStart="5dp"
+    android:layout_marginEnd="12dp"
+    >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:visibility="visible">
+
+        <ImageView
+            android:id="@+id/pd_image"
+            android:layout_width="266dp"
+            android:layout_height="215dp"
+            android:layout_marginStart="60dp"
+            android:src="@drawable/img_4"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/pd_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="Product name"
+            android:textColor="#260F46"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            app:layout_constraintHorizontal_bias="0.094"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/pd_image" />
+
+
+        <RatingBar
+            android:id="@+id/pd_ratingbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:rating="5"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.353"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/pd_name" />
+
+        <TextView
+            android:id="@+id/ratingtext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="316dp"
+            android:layout_marginTop="24dp"
+            android:text="(5)"
+            android:textColor="#000000"
+            android:textSize="35dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/pd_name" />
+
+        <TextView
+            android:id="@+id/pd_sellprice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="#50BD63"
+            android:text="₹120                                                     "
+            android:textColor="#000000"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/pd_ratingbar" />
+
+        <TextView
+            android:id="@+id/pd_MRP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="#50BD63"
+            android:text="₹100"
+            android:textColor="#000000"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.257"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/pd_ratingbar" />
+
+
+        <TextView
+            android:id="@+id/pd_discount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="#50BD63"
+            android:text="20% of"
+            android:textColor="#000000"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.904"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/pd_ratingbar" />
+
+        <TextView
+            android:id="@+id/pd_return"
+            android:layout_width="126dp"
+            android:layout_height="123dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="20dp"
+            android:drawableTop="@drawable/ic_baseline_published_with_changes_24"
+            android:text="7 day Replacement "
+            android:textColor="#153143"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/pd_sellprice" />
+
+        <TextView
+            android:id="@+id/pd_cod"
+            android:layout_width="130dp"
+            android:layout_height="126dp"
+            android:layout_marginStart="132dp"
+            android:layout_marginTop="20dp"
+            android:drawableTop="@drawable/ic_baseline_currency_rupee_24"
+            android:text="Cash on Delivery"
+            android:textColor="#153143"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/pd_sellprice" />
+
+        <TextView
+            android:id="@+id/pd_gurantee"
+            android:layout_width="130dp"
+            android:layout_height="126dp"
+            android:layout_marginStart="260dp"
+            android:layout_marginTop="20dp"
+            android:drawableTop="@drawable/ic_baseline_add_box_24"
+            android:text=" Re-Book Guaramtee"
+            android:textColor="#153143"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/pd_sellprice" />
+
+
+        <TextView
+            android:id="@+id/pd_selller"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="340dp"
+            android:text="Sold by:"
+            android:textColor="#1D083C"
+            android:textSize="25sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/pd_image" />
+
+        <TextView
+            android:id="@+id/pd_Highlights"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="388dp"
+            android:text="Highlights:"
+            android:textColor="#1D083C"
+            android:textSize="25sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/pd_image" />
+
+
+        <TextView
+            android:id="@+id/pd_medium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="12dp"
+            android:text="Medium:"
+            android:textColor="#1D083C"
+            android:textSize="25sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/pd_Highlights" />
+
+        <TextView
+            android:id="@+id/pd_standard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="16dp"
+            android:text="Standard:"
+            android:textColor="#1D083C"
+            android:textSize="25sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/pd_medium" />
+
+
+        <TextView
+            android:id="@+id/pd_condition"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="20dp"
+            android:text="Condition:"
+            android:textColor="#1D083C"
+            android:textSize="25sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/pd_standard" />
+
+
+        <TextView
+            android:id="@+id/pd_delivery"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="12dp"
+            android:text="Delivery:"
+            android:textColor="#1D083C"
+            android:textSize="25sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/pd_condition" />
+
+
+        <TextView
+            android:id="@+id/pd_XYZ"
+            android:layout_width="279dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="112dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/round_corner_outline_button"
+            android:text="......."
+            android:textColor="#1D083C"
+            android:textSize="25sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/pd_cod" />
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginTop="8dp"
+            android:outlineSpotShadowColor="#07042C"
+            app:layout_constraintTop_toBottomOf="@+id/pd_discount"
+            tools:layout_editor_absoluteX="-4dp"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <View
+            android:id="@+id/view2"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginTop="144dp"
+            android:outlineSpotShadowColor="#07042C"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/pd_discount" />
+
+        <TextView
+            android:id="@+id/highlights"
+            android:layout_width="273dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="128dp"
+            android:layout_marginTop="64dp"
+            android:background="@drawable/round_corner_outline_button"
+            android:text="......."
+            android:textColor="#1D083C"
+            android:textSize="25sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/pd_cod" />
+
+        <TextView
+            android:id="@+id/medium"
+            android:layout_width="273dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="116dp"
+            android:layout_marginTop="208dp"
+            android:background="@drawable/round_corner_outline_button"
+            android:text="......."
+            android:textColor="#1D083C"
+            android:textSize="25sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/pd_cod" />
+
+        <TextView
+            android:id="@+id/standards"
+            android:layout_width="273dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="116dp"
+            android:layout_marginTop="156dp"
+            android:background="@drawable/round_corner_outline_button"
+            android:text="......."
+            android:textColor="#1D083C"
+            android:textSize="25sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/pd_cod" />
+
+        <TextView
+            android:id="@+id/condition"
+            android:layout_width="273dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="132dp"
+            android:layout_marginTop="104dp"
+            android:background="@drawable/round_corner_outline_button"
+            android:text="......."
+            android:textColor="#1D083C"
+            android:textSize="25sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/pd_cod" />
+
+        <TextView
+            android:id="@+id/delivery"
+            android:layout_width="273dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="116dp"
+            android:layout_marginTop="256dp"
+            android:background="@drawable/round_corner_outline_button"
+            android:text="......."
+            android:textColor="#1D083C"
+            android:textSize="25sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/pd_cod" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

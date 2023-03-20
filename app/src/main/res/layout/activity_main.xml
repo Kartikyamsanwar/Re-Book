@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:visibility="visible"
     tools:context=".MainActivity">
-
 
 
     <TextView
@@ -16,20 +15,21 @@
         android:layout_height="wrap_content"
 
 
-        android:layout_marginTop="16dp"
-        android:text="Re-Book!"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="24dp"
 
+        android:text="Re-Book!"
         android:textColor="@color/purple_500"
         android:textSize="30sp"
-        android:textStyle="bold"
 
+        android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"/>
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
         android:id="@+id/login_Image"
-        android:layout_width="335dp"
-        android:layout_height="224dp"
+        android:layout_width="370dp"
+        android:layout_height="297dp"
         android:layout_marginTop="8dp"
         android:src="@drawable/loginmain"
         app:layout_constraintEnd_toEndOf="parent"
@@ -41,9 +41,9 @@
         android:id="@+id/login_hello_textview"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="56dp"
+        android:layout_marginTop="32dp"
         android:text="Hello!"
-        android:textColor="@color/black"
+        android:textColor="#000000"
         android:textSize="36sp"
 
         android:textStyle="bold"
@@ -58,48 +58,38 @@
         android:layout_height="71dp"
         android:layout_marginTop="32dp"
         android:text="Best place to sell and buy Book,Digest,Notes,etc."
-        android:textColor="@color/purple_200"
+        android:textColor="#C2220754"
         android:textSize="22sp"
         android:textStyle="italic"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.643"
+        app:layout_constraintHorizontal_bias="0.608"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/login_hello_textview" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.673" />
 
     <TextView
-
-        android:id="@+id/login_button"
-        android:layout_width="150dp"
-        android:layout_height="80dp"
-        android:layout_marginTop="16dp"
-        android:background="@drawable/round_corner_button_solid"
-        android:gravity="center"
-        android:text="LOGIN"
-        android:textColor="@color/black"
-        android:textSize="20sp"
+        android:id="@+id/Welcome_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="88dp"
+        android:layout_marginTop="24dp"
+        android:text="abc"
+        android:textColor="#09621A"
+        android:textSize="24sp"
         android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.501"
-
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/top_desctextview" />
 
-    <TextView
-        android:id="@+id/Signup_button"
-        android:layout_width="150dp"
-        android:layout_height="80dp"
-        android:layout_margin="64dp"
-        android:layout_marginTop="20dp"
-        android:background="@drawable/round_corner_outline_button"
-        android:gravity="center"
-        android:text="Signup"
-        android:textColor="@color/purple_700"
-        android:textSize="20sp"
-        android:textStyle="bold"
+    <ProgressBar
+        android:id="@+id/welcome_progressbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/login_button" />
+        app:layout_constraintTop_toBottomOf="@+id/Welcome_name" />
 
 
-</android.support.constraint.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
